@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvatica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .topnav a {
+            float: left;
+            color: deeppink;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: blueviolet;
+            color: deepskyblue;
+        }
+
+        .topnav a.active {
+            background-color: yellowgreen;
+            color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Me</a>
+        <a href="about.html">Backgorund</a>
+        <a href="contactme.html">My school</a>
+        <a href="gallery.html">My hobbies</a>
+    </div>
+    <div>
+        <h1>My Hobbies</h1>
+        <section>
+            <img class="myclass" src="https://images.theconversation.com/files/134400/original/image-20160817-3587-aw9yx0.jpg?ixlib=rb-4.1.0&q=45&auto=format&w=754&fit=clip"
+                style="height:500px;">
+            <img class="myclass"
+                src="https://pbs.twimg.com/media/FszYOipaAAAvYQW.jpg"
+                style="height:500px;">
+            <img class="myclass"
+                src="https://cdn.images.express.co.uk/img/dynamic/143/590x/Fortnite-927349.jpg">
+            <img class="myclass"
+                 src="https://www.bigissue.com/wp-content/uploads/2023/12/matias-north-v8DSLoY80Xk-unsplash.jpg?w=1920"
+                style="height:500px;">
+            <section>
+                <img class="myclass"
+                    src="https://bsmedia.business-standard.com/_media/bs/img/article/2020-11/06/full/1604653132-6606.jpg"
+                    style="height:500px;">
+                
+
+
+
+            </section>
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("myclass");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) { myIndex = 1 }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 3000);
+
+                }
+            </script>
+
+
+            }
+            </script>
+    </div>
+</body>
+
+</html>
